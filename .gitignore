@@ -1,0 +1,14 @@
+# .gitignoroe for Eclipse Android Project
+
+# ANT related.
+/local.properties
+
+# Eclipse related.
+/.classpath
+/.project
+/project.properties
+
+# Build outputs and intermediates
+/bin/
+/obj/
+/gen/

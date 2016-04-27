@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Root Relative Layout -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+>
+    <!-- GoTo Viewer icon -->
+    <ImageView
+        android:id="@+id/go_to_viewer_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/unlimitedburstshot_viewer_icon"
+    />
+
+    <!-- Capture Button -->
+    <ImageView
+        android:id="@+id/capture_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/unlimitedburstshot_capture_icon"
+    />
+
+    <!-- Change Camera Device Icon -->
+    <ImageView
+        android:id="@+id/change_device_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/unlimitedburstshot_camera_icon"
+    />
+
+    <!-- Auto Focus Visual Feedback -->
+    <ImageView
+        android:id="@+id/auto_focus_visual_feedback_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+    />
+
+    <!-- Interactive Slider Indicator -->
+    <RelativeLayout
+        android:id="@+id/interactive_slider_indicator_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+    >
+        <ImageView
+            android:id="@+id/interactive_slider_indicator_grip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+        />
+    </RelativeLayout>
+
+</RelativeLayout>

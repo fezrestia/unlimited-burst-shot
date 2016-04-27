@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fezrestia.android.application.unlimitedburstshot"
+    android:versionCode="1"
+    android:versionName="Ver.A++"
+>
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="15"
+    />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name="UnlimitedBurstShotApplication"
+        android:label="@string/application_label"
+        android:icon="@drawable/unlimitedburstshot_application_icon"
+    >
+
+        <activity
+            android:name="UnlimitedBurstShotActivity"
+            android:label="@string/application_label"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:configChanges="orientation|keyboardHidden|mcc|mnc"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTask"
+        >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>
